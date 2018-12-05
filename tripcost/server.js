@@ -15,6 +15,8 @@ mongo.connect(url, (err, client) => {
   expenses = db.collection('expenses')
 });
 
+app.use(express.json())
+
 app.post('/trip', (req, res) => {
 
 });
